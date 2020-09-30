@@ -95,6 +95,11 @@ a:active {
 /*----------------- main end -----------------*/
 
 /* --------------- sub__menu start ----------- */
+.wrapper {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 .sab {
   margin: 0 auto;
 }
@@ -154,7 +159,7 @@ a:active {
   width: 310px;
 }
 .image-l {
-  width: 620px;
+  width: 645px;
 }
 
 .MORE {

@@ -1,8 +1,8 @@
 window.onload = function () {
   new Masonry(".sab", {
     itemSelector: ".item",
-    columnWidth: 350,
-    gutter: 15,
+    columnWidth: 330,
+    gutter: 4,
     fitWidth: true,
   });
 };
