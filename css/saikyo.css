@@ -89,9 +89,63 @@ a:active {
 
 /*----------------- main start ---------------*/
 .slick1 img {
-  width: 100% !important;
   height: 600px !important;
+  position: relative;
 }
+.sub1,
+.sub2,
+.sub3,
+.sub4,
+.sub5,
+.sub6 {
+  position: relative;
+}
+.text-box1,
+.text-box2,
+.text-box3,
+.text-box4,
+.text-box5,
+.text-box6 {
+  display: block;
+  width: 100%;
+  max-width: 610px;
+  position: absolute;
+  bottom: 20px;
+  right: 200px;
+  color: white;
+  background: rgba(60, 181, 144, 0.8);
+  text-align: start;
+  margin: auto;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 30px 60px;
+}
+.text-box1::before,
+.text-box2::before,
+.text-box3::before,
+.text-box4::before,
+.text-box5::before,
+.text-box6::before {
+  content: "”";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 40px;
+}
+.text-box1::after,
+.text-box2::after,
+.text-box3::after,
+.text-box4::after,
+.text-box5::after,
+.text-box6::after {
+  content: "”";
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  bottom: -20px;
+  font-size: 40px;
+}
+
 /*----------------- main end -----------------*/
 
 /* --------------- sub__menu start ----------- */
