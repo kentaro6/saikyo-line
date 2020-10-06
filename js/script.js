@@ -17,7 +17,7 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
-          centerMode: false,
+          centerMode: true,
         },
       },
     ],
@@ -35,6 +35,6 @@ $(function () {
  */
 $(function () {
   $(".mobile-menu-icon").on("click", () => {
-    $(".modal-window").slideToggle("slow");
+    $(".hanburger-window").slideToggle("slow");
   });
 });
