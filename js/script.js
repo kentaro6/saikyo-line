@@ -1,3 +1,6 @@
+/**
+ * slickのプラグインの設定
+ */
 $(function () {
   $(".slick1").slick({
     autoplay: true,
@@ -18,5 +21,20 @@ $(function () {
         },
       },
     ],
+  });
+});
+
+//mobile-menu-icon のアニメーション
+$(function () {
+  $(".mobile-menu-icon").on("click", () => {
+    $("body").toggleClass("menu-open");
+  });
+});
+/**
+ * modal-window の設定
+ */
+$(function () {
+  $(".mobile-menu-icon").on("click", () => {
+    $(".modal-window").slideToggle("slow");
   });
 });
