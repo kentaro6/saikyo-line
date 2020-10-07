@@ -96,11 +96,7 @@ header {
 
 /*----------------- main start ---------------*/
 .slick1 img {
-  height: 600px !important;
-  /* position: relative; */
-}
-.slide-screen {
-  width: 100%;
+  height: 600px;
 }
 .main-screen1,
 .main-screen2,
@@ -124,7 +120,7 @@ header {
   right: 200px;
   color: #fff;
   background-color: rgba(60, 181, 144, 0.8);
-  font-size: 2.4rem;
+  font-size: 1.7vw;
   font-weight: bold;
   padding: 30px 60px;
 }
@@ -195,9 +191,9 @@ header {
 .item h1 {
   padding: 10px;
   padding-left: 30px;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   line-height: 1;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   vertical-align: baseline;
 }
 
@@ -360,6 +356,9 @@ header {
   .hide {
     display: none;
   }
+  .slick1 img {
+    height: 500px;
+  }
 
   .mobile-menu-icon {
     display: block;
@@ -433,5 +432,30 @@ header {
     height: 43px;
     padding: 0px;
     cursor: pointer;
+  }
+  .text-box1,
+  .text-box2,
+  .text-box3,
+  .text-box4,
+  .text-box5,
+  .text-box6 {
+    max-width: 500px;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 500px) {
+  .slick1 img {
+    height: 400px;
+  }
+  .text-box1,
+  .text-box2,
+  .text-box3,
+  .text-box4,
+  .text-box5,
+  .text-box6 {
+    max-width: 320px;
   }
 }
