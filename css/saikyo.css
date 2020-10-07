@@ -120,7 +120,7 @@ header {
   right: 200px;
   color: #fff;
   background-color: rgba(60, 181, 144, 0.8);
-  font-size: 1.7vw;
+  font-size: 1.7rem;
   font-weight: bold;
   padding: 30px 60px;
 }
@@ -162,38 +162,37 @@ header {
 .sab {
   margin: 0 auto;
 }
-.sab img:hover {
-  transform: scale(1.1);
-}
 
 .item {
-  position: relative;
   border-top: rgba(47, 193, 144, 0.8) solid 6px;
-  overflow: hidden; /*拡大時にはみ出た部分を隠す*/
   height: 310px;
   width: 100%;
-  z-index: 1;
   margin-bottom: 10px;
   cursor: pointer;
   background: #fff;
   box-sizing: border-box;
 }
-.item img {
-  display: block;
+.item-image {
+  overflow: hidden;
+  /*拡大時にはみ出た部分を隠す */
+  height: 220px;
+}
+.item-image img {
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  transform: scale(1);
   height: 220px;
   width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
+}
+.item-image img:hover {
+  transform: scale(1.1);
 }
 
 .item h1 {
-  padding: 10px;
   padding-left: 30px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1;
-  letter-spacing: 1.1px;
+  letter-spacing: 1px;
   vertical-align: baseline;
 }
 
@@ -352,12 +351,47 @@ header {
 }
 /*---------------- footer end ---------------------*/
 
+/* ========== iPad用のスタイル ==========  */
 @media (max-width: 768px) {
   .hide {
     display: none;
   }
   .slick1 img {
     height: 500px;
+  }
+  .text-box1,
+  .text-box2,
+  .text-box3,
+  .text-box4,
+  .text-box5,
+  .text-box6 {
+    padding: 10px 60px;
+  }
+
+  .text-box1::before,
+  .text-box2::before,
+  .text-box3::before,
+  .text-box4::before,
+  .text-box5::before,
+  .text-box6::before {
+    content: "”";
+    transform: rotate(180deg);
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 4rem;
+  }
+  .text-box1::after,
+  .text-box2::after,
+  .text-box3::after,
+  .text-box4::after,
+  .text-box5::after,
+  .text-box6::after {
+    content: "”";
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    font-size: 4rem;
   }
 
   .mobile-menu-icon {
@@ -446,6 +480,8 @@ header {
     transform: translateX(-50%);
   }
 }
+/* ========== スマフォ用のスタイル ==========  */
+
 @media (max-width: 500px) {
   .slick1 img {
     height: 400px;

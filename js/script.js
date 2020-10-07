@@ -38,3 +38,20 @@ $(function () {
     $(".hanburger-window").slideToggle("slow");
   });
 });
+
+/**
+ * ページの一番上に戻る機能
+ */
+$(function () {
+  const topBtn = $(".go-top");
+  //スルスルっとスクロールでトップへもどる
+  topBtn.on("click", () => {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
+});
