@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // スマホ向け
       new Masonry(".sab", {
         itemSelector: ".item",
-        columnMaxWidth: 150,
+        columnMaxWidth: 310,
         gutter: 4,
         fitWidth: false,
       });
