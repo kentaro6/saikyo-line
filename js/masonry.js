@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         itemSelector: ".item",
         columnMaxWidth: 310,
         gutter: 4,
-        fitWidth: false,
+        fitWidth: true,
       });
     }
   }

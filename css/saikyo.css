@@ -252,19 +252,18 @@ header {
 
 /*---------------- footer start ------------------*/
 .fd {
-  display: flex;
-  justify-content: center;
-  margin: 0 10px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 .fd-box {
   background-color: #fff;
-  width: 1000px;
+  margin: 0 10px;
 }
 
 .fd-log {
-  width: 173px;
+  max-width: 173px;
   padding-top: 40px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .fd-log a > img {
   transition: 300ms ease-in-out;
@@ -312,13 +311,12 @@ header {
   cursor: pointer;
 }
 
-.fd-ig,
-.fd-fb {
-  margin: 15px 0 10px;
-}
 .fd-ig a,
 .fd-fb a {
   transition: 300ms ease-in-out;
+}
+.fd-fb {
+  padding-left: 0;
 }
 
 .fd-ig a:hover,
@@ -328,6 +326,7 @@ header {
 
 .fd-sns {
   display: flex;
+  margin-right: 30px;
 }
 
 .fd-sns img {
